@@ -27,8 +27,10 @@ Incorporating the equity coin is likely to add a few user groups to the existing
 #### User Matrix for Home equity coin empowered housing marketplace
 The following table shows probable user groups for the proposed system and their knowledge, experience, skills, software experience, and frequency of use.
 
-![User Matrix](https://github.com/9characters/HEQRegression/blob/main/assets/images/user%20matrix.png)
+![](assets/images/user matrix.png)
+<!--![User Matrix](https://github.com/9characters/HEQRegression/blob/main/assets/images/user%20matrix.png)-->
 
-
+### User Personas
+Here are user personas for different group of users presented above. The firsts user persona is created by grouping two categories of users which are real state provider (seller/owner) and consumer (buyer) into one as the same buyer will be turned into sellers while selling the house. Rest of the personas belong to Administrator and Community Representative respectively. 
 
 
