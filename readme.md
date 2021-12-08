@@ -27,6 +27,8 @@ Incorporating the equity coin is likely to add a few user groups to the existing
 #### User Matrix for Home equity coin empowered housing marketplace
 The following table shows probable user groups for the proposed system and their knowledge, experience, skills, software experience, and frequency of use.
 
-![User Matrix](/assets/images/user matrix.png)
+![User Matrix](assets/images/user matrix.png)
+
+
 
 
