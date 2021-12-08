@@ -54,7 +54,7 @@ Here are user personas for different group of users presented above. The firsts 
 We are in the phase of developing a minimalistic **‘Home Equity (HEQ) Coin’**. The HEQ coin is directly connected to the price of a house in a neighbourhood i.e., if there is increase in the housing price, or the buyers are ready to invest more in the house, then **tentatively, the price of HEQ coin may rise**. Similarly, if the house seller is in immediate need of money, and sells the house in price lower than the current price, then **the value of the house will decrease, and correspondingly the value of HEQ coin will decrease**. Therefore, there is a significant need to predict the housing price, as per the past data, which will help the house seller/buyer to sell/buy the house in **right time, and in right price**. In this context, the **use of regression models** will be the best fit in our scenario.
 In short, we train our regression model on the historical data of houses, and use the model to predict the housing price using the new data entered by user. And if the error in prediction is more than the acceptable range, then we will update the model to incorporate the error. This is similar to the working of **Zestimate** in Zillow. In our case, the dataset is **provided by Zillow** which provides plenty of historical information about the housing prices and their features. The data can be categorized as “Interior Housing Data” and “Exterior Housing Data” as follows:
 
-<img align="right"  src="assets/images/interior_data.png">
+<!--<img align="right"  src="assets/images/interior_data.png">-->
 #### Interior Housing Data:
 * Total Rooms
 * Total Bedrooms
@@ -65,11 +65,11 @@ In short, we train our regression model on the historical data of houses, and us
 * Water
 * Sewer
 
-<!--![](assets/images/interior_data.png)-->
+![](assets/images/interior_data.png)
 
 
 #### Exterior Housing Data:
-<img align="right"  src="assets/images/exterior_data.png">
+<!--<img align="right"  src="assets/images/exterior_data.png">-->
 * Condition
 * Architectural Style
 * Total Stories
@@ -81,6 +81,7 @@ In short, we train our regression model on the historical data of houses, and us
 * Market Land Value [A]
 * Market Improvement Value [B] 
 * Market Total Value ([C] = [A] + [B])
+![](assets/images/exterior_data.png)
 
 Furthermore, the price of the house can be predicted using other features like tax records, built year, nearby by schools and universities, nearby markets, granite countertops in kitchen, windows placement, spacious patio, etc.
 
