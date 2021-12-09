@@ -44,7 +44,7 @@ Here are user personas for different group of users presented above. The firsts 
 <p style="padding-left:250px"><b>Fig: User Persona for “Administrator”</b></p>
 
 
-![](assets/images/user_persona3.png)
+![](assets/images/user_persona3.jpeg)
 
 <p style="padding-left:250px"><b>Fig: User Persona for “Community Representative”</b></p>
 
