@@ -199,23 +199,24 @@ The features are:
 #### Step 3 - Outlier Detection and Removal
 Outliers are the extreme values that are not representative of the majority of data and normally outside the range of expected values. In machine learning, it's important to understand  the outliers and in most cases need to remove outliers to train the model with representative data. 
 
-There are various approaches to remove outliers such as Z-score, Interquartile Range, DBScan, Isolation Forests etc. In this project we first tried popular approach that is widely applauded by ML communities i.e. Z-Score is also called outlier removal using standard deviation. 
+There are various approaches to remove outliers such as Z-score, Interquartile Range, DBScan, Isolation Forests etc. In this project we first tried popular approach that is widely applauded by ML communities i.e. Z-Score, also called outlier removal using standard deviation. 
 
-In the Z-score approach, standard deviation can be used as a cut-off point to remove outlined in normal or gaussian like distribution. One standard deviation includes 68% of data, two standard deviation includes 95% of data and three standard deviation  includes 99.7% data points. i.e.  if μ is mean and σ is standard deviation then
+In the Z-score approach, standard deviation can be used as a cut-off point to remove outliers in normal or gaussian like distribution. One standard deviation includes 68% of data, two standard deviations includes 95% of data and three standard deviations  includes 99.7% data points. 
+i.e.  if μ is mean and σ is standard deviation then,
 
 * μ  ± σ  ⇒ 68%
 * μ ± 2σ  ⇒ 95%
 * μ ± 3σ  ⇒ 99.7%
  
-In this project, first, we calculated mean and standard deviation for the features with selected numerical features where we manually observed outliers such as House Price, LotSizeSquareFeet, Total Rooms. Once feature’s mean and standard deviation computed,  we removed outliers with three standard deviation, 2.5 standard deviation and 2 standard deviation and trained the model separately with all these preprocessed data. We achieved some improvements in our training and test accuracy by removing 5% data points outside the range of  μ ± 2σ, but the improvement is not satisfactory. Then we tried another well accepted outlier removal method, Interquartile Range.
+In this project, first, we calculated mean and standard deviation for the selected numerical features such as House Price, LotSizeSquareFeet, Total Rooms where we manually observed outliers .Once feature’s mean and standard deviation computed,  we removed outliers with 3 standard deviations, 2.5 standard deviations and 2 standard deviations and trained the model separately. We achieved some improvements in our training and test accuracies by removing outliers, but the improvement is not satisfactory in this method. Then we tried another well accepted outlier removal method, Interquartile Range.
 
-In the Interquartile Range, for each interesting numerical feature, we calculated the interquartile range IQR(Q3-Q1). Then we removed data points that is lower than Q1 - 1.5 * IQR and higher than Q3 + 1.5 * IQR as shown in colab screenshot below:
+In the Interquartile Range, for each selected numerical feature, we calculated the interquartile range IQR = Q3-Q1. Then we removed data points that is lower than Q1 - 1.5 * IQR and higher than Q3 + 1.5 * IQR as shown in colab screenshot below:
 
 ![](assets/images/outliers.png)
 
 <p style="padding-left:200px"><b>Fig: Interquartile Range Snippet</b></p>
 
-Once the outliers have been removed from features such as House Price, LotSizeSquareFeet, Total Rooms, we train the model and evaluate both training and test accuracy. In this case, the accuracy score passed the test case and is better than the Z-score method. Therefore, we accepted the Interquartile Range outlier removal method. 
+Once the outliers have been removed from features such as House Price, LotSizeSquareFeet, Total Rooms, we train the model and evaluate both training and test accuracies. In this case, the accuracy scores passed the designed test case and is better than the Z-score method. Therefore, we accepted the Interquartile Range outlier removal method. 
 
 **After data filtering and outlier removal, our regression model has the followings:**
   * *Categorical Features*: 13
