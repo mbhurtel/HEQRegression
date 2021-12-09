@@ -217,13 +217,13 @@ In the Interquartile Range, for each interesting numerical feature, we calculate
 
 Once the outliers have been removed from features such as House Price, LotSizeSquareFeet, Total Rooms, we train the model and evaluate both training and test accuracy. In this case, the accuracy score passed the test case and is better than the Z-score method. Therefore, we accepted the Interquartile Range outlier removal method. 
 
-**After data filtering and outlier removal, our regression mode has the followings:**
+**After data filtering and outlier removal, our regression model has the followings:**
   * *Categorical Features*: 13
   * *Numerical Features*: 11
   * *Target*: 1
   * *Total Data*: 250341
 
-Now we encode the categorical features into numbers as follows:
+Now, we encode the categorical features into numbers as follows:
 
 #### Step 4 - Encoding Categorical Features
 
