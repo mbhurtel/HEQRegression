@@ -314,9 +314,30 @@ The test cases in our regression system are divided in functionality, security a
 
 <p style="padding-left:330px"><b>Fig: Results after Encryption</b></p>
 
+![](assets/images/Fernet_workflow.png)
+
+<p style="padding-left:330px"><b>Fig: Fernet Workflow</b></p>
+
 ### III. Usability Test Cases:
 
 ![](assets/images/usability.png)
 
 <p style="padding-left:330px"><b>Fig: Usability Test Cases</b></p>
+
+# 10. Online Learning
+We used Python-Kafka to simulate the Online Learning Process.
+In kafka, there is a producer which accumulates the online data, and stores it in a topic in "utf-8" encoding format. We capture the data from the stored topic, and decode them as the "New Online Data" and "New Online Label".
+The following figures shows the workflow of the Online Learning using Kafka.
+
+![](assets/images/online.png)
+
+<p style="padding-left:500px"><b>Fig: Online Learning Using Kafka</b></p>
+
+# 11. Code Obfuscation
+We use the Pyarmor which is the python library to obfuscate the python script to the byte codes.
+The figures below shows the bytes code for our python script.
+
+![](assets/images/obfuscation.png)
+
+<p style="padding-left:500px"><b>Fig: Code Obfuscation using Pyarmor</b></p>
 
