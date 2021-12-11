@@ -324,6 +324,7 @@ The test cases in our regression system are divided in functionality, security a
 
 <p style="padding-left:330px"><b>Fig: Usability Test Cases</b></p>
 
+<<<<<<< HEAD
 # 10. Online Learning
 We used Python-Kafka to simulate the Online Learning Process.
 In kafka, there is a producer which accumulates the online data, and stores it in a topic in "utf-8" encoding format. We capture the data from the stored topic, and decode them as the "New Online Data" and "New Online Label".
@@ -340,4 +341,14 @@ The figures below shows the bytes code for our python script.
 ![](assets/images/obfuscation.png)
 
 <p style="padding-left:500px"><b>Fig: Code Obfuscation using Pyarmor</b></p>
+=======
+
+### III. Online Learning:
+Used Apache Kafka to train pre-trained regression model using new housing generated whenever there is sell/buy of houses. Online learning is important because training regression model from scratch using the historical data and additional new data is costly and time-consuming.
+We simulated online training by using real-time streamed data by KAfka Stream API. 
+After online training, the regression model when tested on simulated housing dataset, gave R2-score: 0.912
+
+
+
+>>>>>>> 7415dc977dd62ea6fbcb9496a41938347adae624
 
