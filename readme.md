@@ -320,3 +320,12 @@ The test cases in our regression system are divided in functionality, security a
 
 <p style="padding-left:330px"><b>Fig: Usability Test Cases</b></p>
 
+
+### III. Online Learning:
+Used Apache Kafka to train pre-trained regression model using new housing generated whenever there is sell/buy of houses. Online learning is important because training regression model from scratch using the historical data and additional new data is costly and time-consuming.
+We simulated online training by using real-time streamed data by KAfka Stream API. 
+After online training, the regression model when tested on simulated housing dataset, gave R2-score: 0.912
+
+
+
+
